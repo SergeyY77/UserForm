@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #007ad9;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.p-menubar {
+    background: #007ad9 !important;
+    border: none;
+    border-radius: 0;
+}
+
+.p-menubar .p-menuitem-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.p-table {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #00000011;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+button {
+    margin: 0 0.5rem;
+}

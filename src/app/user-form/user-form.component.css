@@ -1,0 +1,42 @@
+form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000015;
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.field {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 1rem;
+    width: 100%;
+    border: 1px solid #007ad9;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+}
+
+button:hover {
+    background: #007ad9;
+    color: black;
+}

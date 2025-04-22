@@ -1,0 +1,19 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="p-fluid grid">
+    <div class="field col-12">
+      <label for="name">Name</label>
+      <input id="name" pInputText formControlName="name" />
+    </div>
+    <div class="field col-12">
+      <label for="email">Email</label>
+      <input id="email" pInputText formControlName="email" />
+    </div>
+    <div class="field col-12">
+      <label for="phone">Phone</label>
+      <input id="phone" pInputText formControlName="phone" />
+    </div>
+    <div class="field col-12">
+      <p-button type="submit" label="Save" />
+    </div>
+  </div>
+</form>
