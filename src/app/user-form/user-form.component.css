@@ -40,3 +40,8 @@ button:hover {
     background: #007ad9;
     color: black;
 }
+
+:host ::ng-deep .p-inputtext {
+    background-color: white !important;
+    color: black !important;
+}

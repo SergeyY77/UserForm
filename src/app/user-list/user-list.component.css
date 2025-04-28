@@ -1,0 +1,10 @@
+p-datatable-sm {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th,
+td {
+    white-space: normal;
+    word-break: break-word;
+}

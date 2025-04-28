@@ -5,13 +5,17 @@ import { Observable } from 'rxjs';
 export interface User {
   id?: number;
   name: string;
+  username: string;
   email: string;
+  address: any;
   phone: string;
+  website: any;
+  company: any;
 }
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
-  private apiUrl = 'https://jsonplaceholder.typicode.com/users';
+  private apiUrl = 'http://localhost:4000/users';
 
   constructor(private http: HttpClient) {}
 
@@ -19,7 +23,7 @@ export class UserService {
     return this.http.get<User[]>(this.apiUrl);
   }
 
-  getUser(id: number): Observable<User> {
+  getUser(id: any): Observable<User> {
     return this.http.get<User>(`${this.apiUrl}/${id}`);
   }
 
@@ -27,12 +31,11 @@ export class UserService {
     return this.http.post<User>(this.apiUrl, user);
   }
 
-  updateUser(id: number, user: User): Observable<User> {
+  updateUser(id: any, user: User): Observable<User> {
     return this.http.put<User>(`${this.apiUrl}/${id}`, user);
   }
+
+  deleteUser(id: any): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
 }
-// ```
-
-// ---
-
-// ```typescript
