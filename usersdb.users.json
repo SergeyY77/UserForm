@@ -1,0 +1,86 @@
+[{
+  "_id": {
+    "$oid": "680cb1fbb9a96eb34e1245c8"
+  },
+  "name": "wafawfawfa",
+  "username": "Hovhannisyan",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874"
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+},
+{
+  "_id": {
+    "$oid": "680cb1fbb9a96eb34e1245c9"
+  },
+  "name": "Ervin Howell",
+  "username": "Antonette",
+  "email": "Shanna@melissa.tv",
+  "address": {
+    "street": "Victor Plains",
+    "suite": "Suite 879",
+    "city": "Wisokyburgh",
+    "zipcode": "90566-7771"
+  },
+  "phone": "010-692-6593 x09125",
+  "website": "anastasia.net",
+  "company": {
+    "name": "Deckow-Crist",
+    "catchPhrase": "Proactive didactic contingency",
+    "bs": "synergize scalable supply-chains"
+  }
+},
+{
+  "_id": {
+    "$oid": "680d1b278ead7ce4428ef373"
+  },
+  "name": "Sergey",
+  "username": "Yeghiazaryan",
+  "email": "reliablemotors777@gmail.com",
+  "address": {
+    "street": "Halabyan 36",
+    "suite": "36",
+    "city": "Yerevan",
+    "zipcode": "0036"
+  },
+  "phone": "077579779",
+  "website": "www.facebook.com",
+  "company": {
+    "name": "Reliable Motors LLC",
+    "catchPhrase": "dog",
+    "bs": "lol"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680f2cd08ead7ce4428ef389"
+  },
+  "name": "Jack",
+  "username": "Nickolson",
+  "email": "jachnikolson@yahoo.com",
+  "address": {
+    "street": "Bush",
+    "suite": "33",
+    "city": "New York",
+    "zipcode": "85490"
+  },
+  "phone": "+18842334324",
+  "website": "forbes.com",
+  "company": {
+    "name": "CryptoInvest",
+    "catchPhrase": "ETHERIUM",
+    "bs": "harness real-time e-markets"
+  },
+  "__v": 0
+}]
