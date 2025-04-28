@@ -38,7 +38,7 @@
           type="button"
           label="Edit"
           icon="pi pi-pencil"
-          [routerLink]="['/user', user._id]"
+          [routerLink]="['/user', user.id]"
         ></button>
       </td>
       <td>
@@ -47,7 +47,7 @@
           type="button"
           label="Delete"
           icon="pi pi-pencil"
-          (click)="onDelete(user._id)"
+          (click)="onDelete(user.id)"
         ></button>
       </td>
     </tr>

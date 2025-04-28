@@ -45,9 +45,11 @@ export class UserFormComponent implements OnInit {
     this.route.params.subscribe((params) => {
       if (params['id']) {
         this.userId = params['id'];
-        this.userService.getUser(this.userId).subscribe((user) => {
-          this.userForm.patchValue(user);
-        });
+        if (this.userId !== null) {
+          this.userService.getUser(this.userId).subscribe((user) => {
+            this.userForm.patchValue(user);
+          });
+        }
       }
     });
   }
@@ -64,7 +66,7 @@ export class UserFormComponent implements OnInit {
           error: (err) => console.error('Error updating user:', err),
         });
       } else {
-        this.http.post('http://localhost:4000/users', userData).subscribe({
+        this.http.post('http://localhost:3000/users', userData).subscribe({
           next: (response) => {
             console.log('User saved!', response);
             this.router.navigate(['/users']);

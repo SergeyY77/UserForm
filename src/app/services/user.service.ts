@@ -15,7 +15,7 @@ export interface User {
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
-  private apiUrl = 'http://localhost:4000/users';
+  private apiUrl = 'http://localhost:3000/users'; // Usually JSON Server runs on 3000
 
   constructor(private http: HttpClient) {}
 
@@ -23,7 +23,7 @@ export class UserService {
     return this.http.get<User[]>(this.apiUrl);
   }
 
-  getUser(id: any): Observable<User> {
+  getUser(id: number): Observable<User> {
     return this.http.get<User>(`${this.apiUrl}/${id}`);
   }
 
@@ -31,11 +31,11 @@ export class UserService {
     return this.http.post<User>(this.apiUrl, user);
   }
 
-  updateUser(id: any, user: User): Observable<User> {
+  updateUser(id: number, user: User): Observable<User> {
     return this.http.put<User>(`${this.apiUrl}/${id}`, user);
   }
 
-  deleteUser(id: any): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  deleteUser(id: number): Observable<{}> {
+    return this.http.delete(`${this.apiUrl}/${id}`);
   }
 }
